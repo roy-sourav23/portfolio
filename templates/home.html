@@ -1,0 +1,49 @@
+{% extends "_base.html" %}
+{% load static %}
+
+{% block title %}home | portfolio{% endblock title %}
+{% block content %}
+
+
+<div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+            <img src="{% static 'images/developer.jpg'%}" class="d-block mx-lg-auto img-fluid" alt="Developer photo"
+                width="700" height="500" loading="lazy">
+        </div>
+        <div class="col-lg-6">
+            <p class="lead"><span>Web Developer</span></p>
+            <h2 class="display-6 fw-bold lh-1 mb-3">Hi There!</h2>
+            <p class="lead">I am <span>SOURAV ROY.</span></p>
+
+
+
+        </div>
+    </div>
+</div>
+
+<div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+            <img src="{% static 'images/full-stack-developer-icon.svg'%}" class="d-block mx-lg-auto img-fluid"
+                alt="Developer photo" width="700" height="500" loading="lazy">
+        </div>
+        <div class="col-lg-6">
+            <h2 class="display-6 fw-bold lh-1 mb-3">LET ME <span>INTRODUCE</span> MYSELF</h2>
+            <p class="lead">I am fluent in Python, C.</p>
+            <p class="lead">My field of interest are <span>Web Development</span> and Cyber Security.</p>
+            <p class="lead">Sometimes, I also apply my passion for developing products with
+                <span>Djago Web Framework</span> and <span>Bootstrap</span>.
+            </p>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+{% endblock content %}

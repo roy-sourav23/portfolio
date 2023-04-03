@@ -1,0 +1,26 @@
+{% extends "_base.html" %}
+{% load static %}
+{% block title %}about | portfolio{% endblock title %}
+
+{% block content %}
+
+<div class="px-4 py-5 my-5 text-center">
+    <img class="d-block mx-auto mb-4" src="{% static 'images/full-stack-developer-icon.svg'%}" width="355" height="355"
+        alt="">
+    <h1 class="display-5 fw-bold">Who Am I?</h1>
+    <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">Hi Everyone, I am Sourav Roy from Kolkata, India.</p>
+        <p class="lead mb-4">I am pursuing B.Tech in Computer Science & Engineering in Haldia Institute of Technology.
+        </p>
+        <p class="lead mb-4">Apart from coding, some other activities that I love to do!</p>
+
+        <ul class="lead mb-4">
+            <li>Playing Games</li>
+            <li>Writing Tech Blogs</li>
+            <li>Travelling</li>
+        </ul>
+
+    </div>
+</div>
+
+{% endblock content %}

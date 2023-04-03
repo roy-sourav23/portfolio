@@ -1,0 +1,40 @@
+{% extends "_base.html" %}
+{% load static %}
+{% block title %}projects | portfolio{% endblock title %}
+
+{% block content %}
+
+<br />
+<section class="py-5 text-center container">
+    <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-light">Projects</h1>
+        </div>
+</section>
+
+<div class="album py-5 bg-light">
+    <div class="container">
+        {% for project in project_list %}
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 "">
+            <div class=" col">
+            <div class="card shadow-sm shadow-lg" style="width: 18rem;">
+                <img src="{{ project.cover.url }}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{ project.name }}</h5>
+                    <p class="card-text">{{ project.details }}.</p>
+                    <div class=" grid gap-3 col">
+                        <a class="bi bi-git p-2 g-col-6" href="{{ project.codeLink }}" target=”_blank”></a>
+                        <a class="bi bi-link-45deg p-3 g-col-6" href="{{ project.demo }}" target=”_blank”>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+
+    </div>
+</div>
+
+</div>
+
+{% endblock content %}
